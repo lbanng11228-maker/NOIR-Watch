@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0a08" />
+  <meta name="description" content="NOIR — انتخابی ماندگار از ساعت‌های لوکس و دقیق." />
+  <title>NOIR Horology — Time, Refined</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="art.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="announcement"><span class="gold-dot"></span> انتخابی برای تمام لحظه‌های خاص <span class="announce-en">— TIME, REFINED</span></div>
+  <header class="site-header" id="top">
+    <button class="icon-btn menu-toggle" aria-label="باز کردن منو" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="منوی اصلی">
+      <a href="#collection">کالکشن‌ها <small>Collections</small></a>
+      <a href="#story">داستان ما <small>Our Story</small></a>
+      <a href="#craft">هنر ساعت‌سازی <small>Craftsmanship</small></a>
+    </nav>
+    <a class="brand" href="#top" aria-label="NOIR homepage"><span class="brand-mark">N</span><span>NOIR<small>HOROLOGY</small></span></a>
+    <div class="header-actions">
+      <button class="icon-btn search-toggle" aria-label="جستجو"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+      <button class="cart-trigger" aria-label="سبد خرید">سبد خرید <span class="cart-count">0</span></button>
+    </div>
+  </header>
+  <div class="search-panel" aria-hidden="true"><input id="searchInput" type="search" placeholder="جستجوی ساعت... / Search watches" /><button class="search-close" aria-label="بستن جستجو">×</button></div>
+  <main>
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> THE ART OF TIMEKEEPING</p>
+        <h1>زمان می‌گذرد.<br><em>استایل</em> ماندگار می‌ماند.</h1>
+        <p class="hero-description">برای لحظه‌هایی که ارزش به‌یادماندن دارند؛ ساعت‌هایی با طراحی دقیق، جزئیات ظریف و شخصیتی فراتر از زمان.</p>
+        <div class="hero-actions"><a class="btn btn-gold" href="#collection">کالکشن را ببین <span>↙</span></a><a class="text-link" href="#story">کشف داستان NOIR <span>↗</span></a></div>
+        <div class="hero-proof"><div class="proof-avatars"><span>✦</span><span>✧</span><span>◈</span></div><div><strong>Crafted to be remembered</strong><small>طراحی‌شده برای ماندگاری</small></div></div>
+      </div>
+      <div class="hero-visual reveal reveal-delay">
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-image-wrap"><img class="hero-watch" src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=1200&q=90" alt="ساعت مچی لوکس با طراحی مینیمال" fetchpriority="high"></div>
+        <div class="image-label"><span>01 / 04</span><span>THE SIGNATURE SERIES</span></div>
+        <div class="floating-note"><span class="note-line"></span><div><small>THE SIGNATURE</small><strong>Elegance in every second.</strong></div></div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>01 — 04</span></div>
+    </section>
+
+    <section class="ticker" aria-label="برند"><div class="ticker-track"><span>TIMELESS DESIGN</span><i>✳</i><span>PRECISION ENGINEERING</span><i>✳</i><span>QUIET LUXURY</span><i>✳</i><span>TIMELESS DESIGN</span><i>✳</i><span>PRECISION ENGINEERING</span><i>✳</i><span>QUIET LUXURY</span><i>✳</i></div></section>
+
+    <section class="collection section-shell" id="collection">
+      <div class="section-heading reveal"><div><p class="eyebrow"><span></span> CURATED FOR YOU</p><h2>کالکشن‌های <em>خاص</em></h2><p class="section-intro">هر ساعت، یک امضا. مدلی را پیدا کن که با داستان تو هماهنگ است.</p></div><a href="#collection" class="text-link collection-all">مشاهده همه مدل‌ها <span>↗</span></a></div>
+      <div class="collection-toolbar reveal"><div class="filter-tabs" role="group" aria-label="فیلتر محصولات"><button class="filter-btn active" data-filter="all">همه <span>All</span></button><button class="filter-btn" data-filter="classic">کلاسیک <span>Classic</span></button><button class="filter-btn" data-filter="modern">مدرن <span>Modern</span></button><button class="filter-btn" data-filter="sport">اسپرت <span>Sport</span></button></div><label class="sort-wrap"><span class="sr-only">مرتب‌سازی</span><select id="sortSelect"><option value="default">مرتب‌سازی: پیش‌فرض</option><option value="asc">ارزان‌ترین</option><option value="desc">گران‌ترین</option></select></label><span class="results-count"><b id="resultCount">12</b> مدل منتخب</span></div>
+      <div class="product-grid" id="productGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>محصولی با این مشخصات پیدا نشد. <button id="resetFilters">نمایش همه ساعت‌ها</button></p>
+    </section>
+
+    <section class="trust section-shell reveal"><div><b>◈</b><strong>گارانتی ۲ ساله</strong><small>2-Year Warranty</small></div><div><b>✳</b><strong>ارسال رایگان</strong><small>Free Shipping</small></div><div><b>⌁</b><strong>۷ روز بازگشت کالا</strong><small>7-Day Returns</small></div><div><b>✦</b><strong>اصالت تضمین‌شده</strong><small>Certified Authentic</small></div></section>
+
+    <section class="story section-shell" id="story">
+      <div class="story-image reveal"><img src="https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&w=1200&q=85" alt="جزئیات دقیق موتور ساعت لوکس" loading="lazy"><span class="image-caption">DETAILS MAKE THE DIFFERENCE</span></div>
+      <div class="story-copy reveal reveal-delay"><p class="eyebrow"><span></span> MORE THAN A WATCH</p><h2>فراتر از زمان.<br><em>یک حس ماندگار.</em></h2><p>در NOIR، لوکس بودن یعنی انتخاب آگاهانه؛ کیفیتی که لمس می‌کنی، جزئیاتی که کشف می‌کنی و طراحی‌ای که هرگز از مد نمی‌افتد.</p><p class="english-quote">“A quiet statement. An unmistakable presence.”</p><a class="btn btn-outline" href="#craft">داستان ما را بخوان <span>↗</span></a></div>
+    </section>
+
+    <section class="craft section-shell" id="craft"><div class="craft-top reveal"><p class="eyebrow"><span></span> THE NOIR STANDARD</p><h2>جزئیات، همه‌چیز هستند.</h2></div><div class="craft-grid"><div class="craft-item reveal"><span class="craft-number">01</span><div class="craft-icon">◈</div><h3>Precision Movement</h3><p>مکانیزم دقیق برای همراهی با هر ثانیه‌ی ارزشمند.</p></div><div class="craft-item reveal"><span class="craft-number">02</span><div class="craft-icon">✳</div><h3>Considered Materials</h3><p>انتخاب متریال باکیفیت؛ از صفحه تا بند ساعت.</p></div><div class="craft-item reveal"><span class="craft-number">03</span><div class="craft-icon">⌁</div><h3>Timeless Design</h3><p>طراحی متعادل و ماندگار، فراتر از ترندهای زودگذر.</p></div></div></section>
+
+    <section class="newsletter section-shell reveal"><div><p class="eyebrow"><span></span> THE NOIR LETTER</p><h2>از دنیای <em>NOIR</em> باخبر بمان.</h2><p>کالکشن‌های تازه، داستان طراحی و انتخاب‌های ویژه؛ گاهی یک ایمیل، نه بیشتر.</p></div><form id="newsletterForm"><label class="sr-only" for="emailInput">ایمیل شما</label><input id="emailInput" type="email" placeholder="ایمیل شما / Your email" required><button type="submit">عضویت <span>↗</span></button><small id="newsletterMessage">با عضویت، با شرایط حریم خصوصی موافقت می‌کنی.</small></form></section>
+  </main>
+
+  <footer class="site-footer section-shell"><a class="brand footer-brand" href="#top"><span class="brand-mark">N</span><span>NOIR<small>HOROLOGY</small></span></a><p>زمان، با نگاهی متفاوت. <span>— Time, Refined.</span></p><div class="footer-links"><a href="#collection">Collections</a><a href="#story">Our Story</a><a href="#craft">Craftsmanship</a></div><span class="copyright">© 2026 NOIR HOROLOGY. DEMO PROJECT.</span></footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div><aside class="cart-drawer" id="cartDrawer" aria-label="سبد خرید" aria-hidden="true"><div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2>سبد خرید <span id="drawerCount">(0)</span></h2></div><button class="drawer-close" aria-label="بستن سبد خرید">×</button></div><div class="cart-items" id="cartItems"><div class="cart-empty">سبد خریدت هنوز خالیه.<span>وقتشه یک انتخاب ماندگار داشته باشی.</span></div></div><div class="cart-footer"><div class="cart-total"><span>مجموع</span><strong id="cartTotal">۰ تومان</strong></div><button class="btn btn-gold checkout-btn" id="checkoutBtn">ادامه سفارش <span>↗</span></button><small>این یک دمو است؛ پرداخت واقعی انجام نمی‌شود.</small></div></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">↑</button>
+</body>
+</html>
