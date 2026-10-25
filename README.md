@@ -1,29 +1,15 @@
-# NOIR Horology — Luxury Watch Store Demo
-
-A responsive bilingual Persian/English luxury watch storefront built with plain HTML, CSS, and JavaScript. No backend or build step required.
+# NOIR Horology — fixed assets
 
 ## Run locally
-1. Extract the folder if it came as a ZIP.
-2. Open `index.html` in your browser, or open the folder in VS Code and use the Live Server extension.
+Open `index.html` in a browser, or use VS Code Live Server.
 
-## Included interactions
-- Responsive desktop and mobile layouts
-- Scroll reveal animations with `IntersectionObserver`
-- Product category filters and live search
-- Wishlist toggles
-- Functional demo cart with quantity controls and totals
-- Mobile navigation, search panel, toast notifications, back-to-top button
-- Newsletter form demo (not connected to an email service)
+## Publish to GitHub Pages
+Upload the CONTENTS of this folder to the root of the `NOIR-Watch` repository, keeping this structure:
 
-## Notes
-- This is a front-end portfolio demo. Checkout and newsletter are not connected to a backend.
-- Product imagery is loaded from Unsplash URLs, and Google Fonts are loaded remotely, so internet access is needed for those assets.
-- Prices and products are sample content and should be adjusted before presenting it as a real store.
+- `index.html`
+- `style.css`
+- `script.js`
+- `art.js`
+- `images/` (all product images)
 
-## v2
-- 12 products, generated from the `catalog` object in `script.js` (add a product = add one entry).
-- Product art is SVG studio renders (`art.js`). To use real photos, set `image` in `products` and swap the `<img>` src.
-- Sorting by price, trust bar, color-graded hero/story photos.
-
-## Real photos
-Drop your own photos in `images/` named by product id (e.g. `images/aurelius.jpg`, `verdant.jpg`, `eclipse.jpg`). They are used automatically; otherwise stock photo, then SVG render.
+Important: the folder must be named exactly `images` and sit beside `index.html`. Filenames are case-sensitive on GitHub Pages. The hero and story images now use local files, so they do not rely on Unsplash loading. Product images are local too, with fallback artwork if an image fails.
