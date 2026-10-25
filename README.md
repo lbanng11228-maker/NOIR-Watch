@@ -24,3 +24,6 @@ A responsive bilingual Persian/English luxury watch storefront built with plain 
 - 12 products, generated from the `catalog` object in `script.js` (add a product = add one entry).
 - Product art is SVG studio renders (`art.js`). To use real photos, set `image` in `products` and swap the `<img>` src.
 - Sorting by price, trust bar, color-graded hero/story photos.
+
+## Real photos
+Drop your own photos in `images/` named by product id (e.g. `images/aurelius.jpg`, `verdant.jpg`, `eclipse.jpg`). They are used automatically; otherwise stock photo, then SVG render.
